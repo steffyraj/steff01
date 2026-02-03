@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div>
+          <h1>Snake</h1>
+          <p class="sub">Classic grid snake. Eat, grow, avoid walls.</p>
+        </div>
+        <div class="score" aria-live="polite">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+      </header>
+
+      <section class="game">
+        <div class="board" id="board" role="grid" aria-label="Snake board"></div>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="controls">
+        <div class="controls-row">
+          <button class="btn" data-dir="up" aria-label="Move up">Up</button>
+        </div>
+        <div class="controls-row">
+          <button class="btn" data-dir="left" aria-label="Move left">Left</button>
+          <button class="btn" data-dir="down" aria-label="Move down">Down</button>
+          <button class="btn" data-dir="right" aria-label="Move right">Right</button>
+        </div>
+        <div class="controls-row">
+          <button class="btn" id="restart">Restart</button>
+        </div>
+        <p class="hint">Keyboard: Arrow keys or WASD. Restart: R or Enter.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
