@@ -1,2 +1,1 @@
-# steff01
-My first project 
+My first GitHub project 🚀
